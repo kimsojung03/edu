@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #table-name {
+            width: 800px;
+            margin: 0 auto;
+        }
+        table,th, td{
+            border: solid 1px #000;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="table-name">
+        <caption>나는 제목이다!</caption>
+        <thead>
+            <tr>
+                <th><em>NO</em></th>
+                <th>첫번째칸</th>
+                <th>두번째칸</th>
+            </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>세번째칸</td>
+                <td>네번째칸</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>세번째칸</td>
+                <td>네번째칸</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>3</td>
+            <td>나는 티풋이다 히히히히히히히히히히히히</td>
+            <td colspan="2" height="400" align="center" valign="middle">수직,수평정렬,너비,높이 옵션을 스스로 갖고 있음. 속성이 무시되는 상황이 발생하기도 함 <br>
+                수직,수평정렬,너비,높이 옵션을 스스로 갖고 있음. 속성이 무시되는 상황이 발생하기도 함</td>
+            </tfoot></td>
+        </tfoot>
+    </table>
+</body>
+</html>
