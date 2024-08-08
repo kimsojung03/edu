@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,li,dl {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#family{
+    width: 400px;
+    background-color: #000;
+    margin: 200px auto;
+    text-align: center;
+    position: relative;
+}
+#family button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+#family ul{
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+}
+#family li{
+}
+#family li a{
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-bottom: solid 1px #fff;
+}
+#family li a:last-child{
+    border-bottom: none;
+}
+
+.slide{
+    height: 255px; in !important; 
+}
