@@ -5,22 +5,23 @@
 #open-btn{
     display: block;
     font-size: 2em;
-    background-color: #fff;
-    color: #ccc;
+    background-color: #ccc;
+    color: #000;
     text-align: center;
     line-height: 4;
     width: 20%;
-    border: 0%;
+    border: 0;
     margin: 100px auto 0; 
     /* 상/좌우/하 */
     box-shadow: 15px 15px 20px;
+    /* x축/y축/블러값 */
     cursor: pointer;
 }
 #popup-box{
     position: fixed;
     width: 600px;
     height: 400px;
-    background-color: #ccc;
+    background-color: #f00;
     color: #fff;
     top: calc(50% - 200px);
     /* 50%내려오는데 왼쪽상단기준이니까 가운데 정렬이 아니게됨
