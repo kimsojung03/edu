@@ -1,5 +1,5 @@
 $(function(){
-    (#family button).on('click',function(){
-        (#famliy ul).addClass().Class().toggleClass()
+    ('#family button').on('click',function(){
+        ('#family ul').toggleClass('.slide');
     });
 });
