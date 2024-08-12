@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 300vh;
+    text-align: center;
+    
+}
+
+div section{
+    background-color:#f00;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 5;
+    color: #fff;
+}
+div header{
+    display:flex;
+    justify-content: center;
+    background-color: blueviolet;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 10vh;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+div header p{
+
+}
+.transform{
+    width: 20px;
+    height: 20px;
+    background-color: #ff0;
+    transition: all 1s linear;
+
+}
+div header p:hover + .transform{
+    transform: translateX(100px) rotate(1200deg);
+}
+
+.top{
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    bottom: 5%;
+    line-height: 200px;
+    right: 5%;
+}
