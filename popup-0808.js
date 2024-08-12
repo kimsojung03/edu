@@ -13,3 +13,14 @@ $(function(){
     });
     
 });
+
+
+
+$(function(){
+    $('#button-01').on('click',function(){
+        $('div').show(1000);
+    });
+    $('div span').on('click',function(){
+        $('div').hide(1000);
+    });
+});
