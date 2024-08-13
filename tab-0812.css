@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li,ul,dl{
+    list-style: none;
+}
+
+#tab{
+    background-color: #ccc;
+    color: #fff;
+    width: 40vw;
+    margin: 5vh auto 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#tab > li{
+    border: solid 1px #000;
+    width: 50%;
+}
+#tab > li input{
+    display: none;
+
+}
+#tab > li input{
+    display: none;
+    width: 50%;
+
+}
+#tab > li label{
+    display: block;
+    background-color:antiquewhite;
+    line-height: 3;
+    text-align: center;
+    color: #000;
+}
+#tab li .ab-box{
+    position: absolute;
+    top: 100;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    border: solid 1px #000;
+    background-color: aquamarine;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#tab > li label:checked ~ .ab-box{
+    z-index: 99;
+}
+
+#tab > li input:checked +label{
+    background-color: #333;
+    color: #fff;
+}

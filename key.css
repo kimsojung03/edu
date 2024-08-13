@@ -1,0 +1,79 @@
+.any{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background-color: #000; */
+    /* background-image: url('./KakaoTalk_20240810_200901982.jpg'); */
+    background: url('./KakaoTalk_20240810_200901982.jpg') no-repeat center / cover;
+    left: calc(50% - 120px);
+    border-top: solid 20px #f00;
+    border-right: solid 20px #00f;
+    border-bottom: solid 20px #f00;
+    border-left: solid 20px #00f;
+    animation-name: topMove;
+    animation: topMove 1s ease-in-out 3s infinite alternate both;
+}
+
+    
+    /* font-size: 3em; */
+    /* animation-name: fedeInOut; */
+    /* 애니메이션의 이름을 정의합니다 */
+    /* animation-duration: 1s; */
+    /* 한 싸이클의 애니메이션이 얼마에 걸쳐 일어날지 지정합니다 */
+    /* animation-delay: 3s; */
+    /* 3초 뒤에 시작한다-언제 애니메이션이 시작될지 지정합니다 */
+    /* animation-direction: alternate; */
+    /* 애니메이션이 종료되고 다시 처음부터 시작할지 역방향으로 진행할지 지정합니다 */
+    /* normal:기본값, 재생 끝나면 처음부터 다시 재생 */
+    /* reverse:역방향으로 재생 */
+    /* alternate: 순방향<->역방향 번갈아가며 재생 */
+    /* alternate-reverse: 역방향 <->순방향 번갈아며 재생*/
+    /* animation-iteration-count: infinite;  */
+    /* infinite; 무한이라는 뜻 */
+    /* 애니메이션이 몇 번 반복될지 지정합니다 */
+    /* animation-play-state: running; */
+    /* running; 재생  / paused 멈춤 */
+    /* 애니메이션을 멈추거나 다시 시작할 수 있습니다 */
+    /* animation-timing-function: ease-in-out; */
+    /* 중간 상태들의 전환을 어떤 시간 간격으로 진행할지 지정 */
+    /* animation-fill-mode: both; */
+    /* 애니메이션이 시작되기 전이나 끝나고 난 후 어떤 값이 적용될지 지정 */
+
+    /* animation: fedeInOut 1s ease-in-out 3s infinite alternate both running; */
+
+/* }@-wepkit-크롬,사파리 */
+/* -o-keyframes 오페라
+    -moz-파이어폭스
+   -ms-keyframes 익스플로어 */
+   
+@keyframes topMove{
+    0%{
+        top:0;
+        translate:20%;
+        
+    }
+    25%{
+        top:25%;
+        
+        
+    }
+    50%{
+        top:50%;
+        
+        
+    }
+        
+    100%{
+        top: 80%;
+        
+    }
+
+}
+/* none 라는 네임은 재생안함 
+   숫자시작, 특수문자 시작 안됨
+   특수문자는 _ - 만 사용가능 여백 안됨 한글 안됨*/
+
+.stop-btn{}
+.start-btn{}
+

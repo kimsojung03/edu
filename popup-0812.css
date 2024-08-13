@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    display: block;
+    box-shadow: 15px 15px 20px;
+    cursor: pointer;
+    margin: 100px auto 0;
+    font-size: 2em;
+    border: 0;
+    background-color: brown;
+    padding: 20px;
+}
+div{
+    position: fixed;
+    display: none;
+    border: solid 1px #000;
+    width: 400px;
+    height: 400px;
+    display: none;
+    top: 30%;
+    left: 40%;
+    
+}
+span{
+    text-align: right;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 20px;
+}
+
+.box{
+    display: block !important;
+}
+
+p{}
