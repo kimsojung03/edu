@@ -5,7 +5,7 @@
     border-radius: 50%;
     /* background-color: #000; */
     /* background-image: url('./KakaoTalk_20240810_200901982.jpg'); */
-    background: url('./KakaoTalk_20240810_200901982.jpg') no-repeat center / cover;
+    background: url('./KakaoTalk_20240812_121544801.jpg') no-repeat center / cover;
     left: calc(50% - 120px);
     border-top: solid 20px #f00;
     border-right: solid 20px #00f;
@@ -13,6 +13,8 @@
     border-left: solid 20px #00f;
     animation-name: topMove;
     animation: topMove 1s ease-in-out 3s infinite alternate both;
+    /* 애니메이션의 이름을 정의하고, 한 싸이클이 1초에 걸쳐 일어나며, 이지엔아웃형태로 움직이며,3초뒤에 시작한다, */
+    /* 그리고 애니메이션이 종료되고 순방향,역방향으로 이동되며 애니메이션이 시작 전후  */
 }
 
     
@@ -50,22 +52,25 @@
 @keyframes topMove{
     0%{
         top:0;
-        translate:20%;
+        translate:0%;
+        transform: rotate(360deg);
         
     }
     25%{
         top:25%;
-        
+        translate:50%;
         
     }
     50%{
         top:50%;
+        translate:0%;
         
         
     }
         
     100%{
         top: 80%;
+        translate:50%;
         
     }
 
