@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form-0814.css">
+
+</head>
+<body class="nanum-gothic-regular">
+    <form id="main">
+        <fieldset>
+            <h1>로그인</h1>
+            <ul class="ul-01">
+                
+                <li>
+                    <input type="text" required placeholder="아이디" maxlength="12" minlength="5">
+                    <input type="password" required placeholder="패스워드" maxlength="10" minlength="6">
+                </li>
+            </ul>
+            <input type="checkbox" id="login-ck">
+            <label for="login-ck">자동로그인</label>
+
+            <!-- <span>확인</span> -->
+            <input type="submit" value="확인" class="chek">
+            <span>
+                <a href="#" id="new" >회원가입</a>
+                <a href="#" id="password-s">아이디/비밀번호 찾기</a>
+            
+            </span>
+            <div id="bo"></div>
+
+            <ul class="ul-02">
+                <li id="face"><a href="#">페이스북</a></li>
+                <li id="google"><a href="#">구글</a></li>
+                <li id="naver"><a href="#">네이버</a>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

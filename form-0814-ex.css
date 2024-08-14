@@ -1,0 +1,202 @@
+.nanum-gothic-regular {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+}
+input::placeholder{
+    color: #aaa;
+}
+#main fieldset{
+    width: 400px;
+    height: 400px;
+    border: solid 1px #ccc;
+    margin: 0 auto;
+    background-color: #fff;
+    
+    
+}
+#main h1{
+    margin: 50px 0 0 200px;
+    line-height: 100px;
+    color: #f2562e;
+}
+#main fieldset{
+    margin-bottom: 50px;
+}
+#main fieldset .ul-01{}
+#main fieldset .ul-01 > li{
+    margin: 10px 0 10px 40px;
+    
+    
+}
+#main fieldset .ul-01 > li > input{
+    width: 70%;
+    margin: 10px 0 10px 10px;
+    display: block;
+    padding: 20px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: solid 1px #ccc;
+}
+#main fieldset input{
+    margin: 10px 0 10px 50px;
+}
+#main fieldset label{
+    font-weight: bold;
+    color:#444;
+}
+#main fieldset div{
+    display: flex;
+    justify-content:center;
+    color:#444;
+    
+}
+#main fieldset div a{
+    color: #444;
+}
+#main fieldset span{
+    display: block;
+    color: #fff;
+    background-color: #f2562e;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 7px;
+    
+    
+}
+#main fieldset span:hover{
+    background-color: #000;
+}
+#main fieldset #new{
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    
+}
+#main fieldset #new::after{
+    content: "";
+    display: block;
+    border-right: solid 1px #ccc;
+    margin-left: 10px;
+}
+#main fieldset #sur{
+    width: 70px;
+    padding: 10px;
+    
+}
+#main fieldset #new:hover{
+    border-bottom: solid 1px #ccc;
+}
+#main fieldset #password-s::after{
+    content: "";
+    display: block;
+    border-right: solid 1px #ccc;
+    clear: both;
+    margin-left: 10px;
+}
+#main fieldset #password-s{
+    padding: 10px;
+    display: flex;
+}
+#main fieldset #password-s:hover{
+    border-bottom: solid 1px #ccc;
+
+}
+#main fieldset #sur:hover{
+    border-bottom: solid 1px #ccc;}
+
+
+#main fieldset .ul-02{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 50px;
+}
+#main fieldset .ul-02 li{
+    display: block;
+    margin-right: 50px;
+}
+
+#bo{
+    border: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+}
+#main fieldset .ul-02 #face{
+    cursor: pointer;
+    background-color: #3b5997;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    border-radius: 7px;
+    padding: 5px;
+}
+#main fieldset .ul-02 #google{
+    cursor: pointer;
+    color: #ccc;
+    background-color: #fff;
+    width: 100px;
+    height: 30px;
+    border: solid 1px #ccc;
+    display: block;
+    text-align: center;
+    border-radius: 7px;
+    padding: 5px;
+}
+#main fieldset .ul-02 #naver{
+    display: block;
+    cursor: pointer;
+    background-color: #3dbb19;
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    border-radius: 7px;
+    padding: 5px;
+}
+#main fieldset .ul-02 #face a{
+    color: #fff;
+    display: block;
+    line-height: 30px;    
+}
+
+#main fieldset .ul-02 #google a{
+    color: #444;
+    display: block;
+    line-height: 30px;    
+}
+
+#main fieldset .ul-02 #naver a{
+    color: #fff;
+    display: block;
+    line-height: 30px;    
+}
