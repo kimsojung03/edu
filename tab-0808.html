@@ -3,45 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탭 연습</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./tab-0808.css">
 </head>
 <body>
-    <ul id="tab">
-        <li>
-            <input type="radio" id="notice" name="tab-box" checked>
-            <label for="notice">공지사항</label>
-            <div class="ab-box">
-                <!-- ul>li*5>a[href="#"]{공지사항 안내문 입니다. 좀 길게 갈거거든요? 쭈우쭉 길게~~~갈겁니다} -->
-                <ul class="notice-content">
-                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든요? 쭈우쭉 길게~~~갈겁니다</a></li>
-                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든요? 쭈우쭉 길게~~~갈겁니다</a></li>
-                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든요? 쭈우쭉 길게~~~갈겁니다</a></li>
-                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든요? 쭈우쭉 길게~~~갈겁니다</a></li>
-                    <li><a href="#">공지사항 안내문 입니다. 좀 길게 갈거거든요? 쭈우쭉 길게~~~갈겁니다</a></li>
-                </ul> 
-        
+    <ul id="container">
+        <li class="li-box">
+            <input type="radio" id="main" name="tab-box" checked>
+            <label for="main">공지사항</label>
+            <div class="box">
+                <ul>
+                    <li>메인페이지입니다 이것은 아주 길게길게 써질것입니다</li>
+
+                </ul>
             </div>
         </li>
-        <li>
-            <input type="radio" id="board" name="tab-box">
-            <label for="board">게시판</label>
-            <div class="ab-box">
-                <p>게시판 리스트가 들어올자리</p>
+        <li class="li-box">
+            <input type="radio" id="main2" name="tab-box">
+            <label for="main2">게시글2번</label>
+            <div class="box">
+                <p>게시글이 들어올자리</p>
             </div>
         </li>
-        <li>
-            <input type="radio" id="notice2" name="tab-box" checked>
-            <label for="notice2">공지사항</label>
-            <div class="ab-box">
-                <p>공지사항 들어올자리</p>
-            </div>
-        </li>
-        <li>
-            <input type="radio" id="board2" name="tab-box">
-            <label for="board2">게시판</label>
-            <div class="ab-box">
-                <p>게시판 리스트가 들어올자리</p>
+        <li class="li-box">
+            <input type="radio" id="main3" name="tab-box">
+            <label for="main3">게시글3번</label>
+            <div class="box">
+                <p>게시글이 들어올자리 세번째 자리</p>
             </div>
         </li>
     </ul>

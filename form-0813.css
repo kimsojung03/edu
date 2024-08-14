@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#join{
+    width: 500px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+#join fieldset{}
+#join fieldset p{}
+#join fieldset p h2{
+
+}
+#join fieldset > ul{}
+#join fieldset > ul li{
+    
+}
+#join fieldset > ul li input{
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#join fieldset span{
+    display: block;
+}
+#join fieldset span +a{
+    display: inline-block;
+}
+
+#join fieldset #sub li{
+    margin: 10px 0;
+}
+#join fieldset #sub .naver{
+    background-color: #00ff00;
+    border: solid 1px #000;
+    text-align: center;
+    padding: 10px;
+}
+#join fieldset #sub .google{
+    background-color: #ddee90;
+    border: solid 1px #000;
+    text-align: center;
+    padding: 10px;
+}
+#join fieldset #sub .face{
+    background-color: #1a03e4;
+    border: solid 1px #000;
+    text-align: center;
+    padding: 10px;
+}

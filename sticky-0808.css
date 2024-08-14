@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     padding: 0;
 }
@@ -28,8 +28,7 @@
     /* 도달 위치 반드시 설정 (top,bottom,left,right중 하나 반드시 필요 */
     /* 조상태그에 overflow 설정 되어있으면 말 안들음 */
     /* 부모태그가 반드시 height값이 설정 되어있어야 함 */
-    /* height값을 %로 지정하면 말 안들음 */
-}
+    /* height값을 %로 지정하면 말 안들음 */ }
 #wrap .no-02{
     background-color: #ff0000;
     position:fixed;

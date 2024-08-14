@@ -2,80 +2,43 @@
     margin: 0;
     padding: 0;
 }
-ol,ul,dl{
+ul,ol,dl{
     list-style: none;
 }
-a{
-    text-decoration: none;
-}
-#tab{
+
+#container{
     width: 40vw;
     margin: 5vh auto 0;
     display: flex;
     justify-content: center;
-    position: relative;
-}
-#tab > li{
-    width: 50%;
-    border-right: solid 1px #000;
+    border: solid 1px #000;
+    background-color: #ccc;
 
 }
-#tab > li:last-child{
-    border-right: 0;
+#container .li-box{
+    width: 50%;
 }
-#tab > li input{
+#container .li-box input{
     display: none;
+    line-height: 50px;
 }
-#tab > li label{
+#container .li-box label{
     display: block;
-    background-color: #333;
-    color: #fff;
+    background-color: antiquewhite;
     text-align: center;
     line-height: 3;
 }
-
-#tab .ab-box{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-    border: solid 1px #000;
-    box-sizing: border-box;
-    z-index: 1;
+#container .li-box .box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#tab > li input:checked ~.ab-box{
-    z-index: 99;
-}
-#tab > li input:checked + label{
-    background-color: #333;
-    color:#fff;
-}
-#tab .notice-content li a{
-    color: #000;
-    display: block; /*반드시 블록요소여야함*/
-    width: 80%; /*반드시 위드값이 존재해야함*/
-    overflow: hidden; /*너비를 넘어가면 안보이게*/
-    white-space: nowrap; /*두줄처리 방지*/
-    text-overflow: ellipsis; /*...처리*/
-    /* display: flex;
-    align-items: center;
-    gap: 14px;
-     */
-}
-.notice-content li{
-    padding: 0 50px;
+    justify-content: space-between;
+    border: solid 1px #000;
 }
 
-/* .notice-content li a::before{
-    display: block;
-    content:"";
-    background-color: #000;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-}  */
+#contaniner 
+#container .li-box .box ul{}
+#container .li-box .box ul li{}
+#container .li-box .box2{}
+#container .li-box .box2 p{}
+#container .li-box .box3{}
+#container .li-box .box3 p{}
+

@@ -66,7 +66,7 @@ header p:hover + .transform{
     /* transform: skew(50deg); */
     /* transform: skewX(45deg); */
     /* transform: skewY(50deg); */
-    /* transform: translateX(100px)rotate(1200deg); */
+    transform: translateX(100px)rotate(1200deg);
 }
 
     .topbtn{
