@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+html,
+boby{
+    font-size: 14px;
+}
+
+.list{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 넘치면 다음줄로 넘기겠다
+      no wrap면 한줄로 처리하겠다 */
+    
+}
+.list li{
+    width: 25%;
+    height: 300px;
+    background-color: #ff0;
+    margin-bottom: 1%;
+    font-size: 2rem;
+}
+
+.list li:nth-child(odd){
+    background-color: blueviolet;
+}
+
+@media screen and (max-width : 1279px){
+    .list li{
+        width:33.33%;
+    }
+}
+@media screen and (max-width : 767px){
+    .list li{
+        width:50%;
+    }
+}
+/* 최대 너비 1279px이하 일때~(1279포함) */
+
+@media screen and (max-width : 374px){
+    .list li{
+        width:100%;
+    }
+}

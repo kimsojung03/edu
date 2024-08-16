@@ -1,0 +1,11 @@
+li{
+    list-style: none;
+}
+
+#textinput:focus{
+    border: 0;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    /* outline: dashed 1px #f00; */
+}
