@@ -19,8 +19,6 @@ a{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid 1px #333;
-    /* box-sizing: border-box; */
 }
 #header h1{}
 #header h1 a{
@@ -53,15 +51,17 @@ a{
 #header nav .depth-01 > li:hover > a,
 #header nav .depth-02 li:hover a{
     display: block;
-    background-color: #333;
+    background-color: #f5f
+    ;
     color: #fff;
 }
 #header nav .depth-01:hover .depth-02{
-    height: 201px;
+    height: 200px;
 }
 #header nav .depth-01 > li > a{
     display: block;
     line-height: 60px;
+
 }
 
 #header nav .depth-02{
@@ -81,18 +81,6 @@ a{
     line-height: 50px;
 }
 
-#header .depth-01 >li:first-child .depth-02{
-    border-left: solid 1px #333;
-}
-
-#header .depth-01 > li:last-child .depth-02{
-    border-right: solid 1px #333;
-}
-
-#header .depth-02 li:last-child a{
-    border-bottom: solid 1px #333;
-}
-
 
 /****************************************************************/
 
@@ -100,4 +88,215 @@ a{
 #mainBanner ul{
     height: 300px;
     background-color: #ccc;
+}
+
+
+/* ****************************************************************888 */
+
+/* #content{}
+#content > ul{}
+
+#content .tab-box{}
+#content .tab-box > ul{}
+#content .tab-box > ul > li{}
+#content .tab-box > ul > li input{}
+#content .tab-box > ul > li label{}
+#content .ab-box{}
+
+#content .notice{}
+#content .notice dl{}
+#content .notice dl dt{}
+#content .notice dl dt a{}
+#content .notice dl dd{}
+#content .notice dl dd a{}
+
+#content.gallety{}
+#content.gallety ul{}
+#content.gallety ul li{}
+#content.gallety ul li a{}
+
+#content .middle-banner{}
+#content .direct{}
+#content.gallety button{} */
+
+
+#content{}
+#content > ul{
+    display: flex;
+}
+#content > ul > li{
+    width: 33.333%;
+}
+
+#content .tab-box{}
+#content .tab-box > ul{
+    display: flex;
+    position: relative;
+}
+#content .tab-box > ul > li{}
+#content .tab-box > ul > li input{
+    display: none;
+}
+#content .tab-box > ul > li label{
+    display: block;
+    line-height: 50px;
+    background-color: #f5f;
+    padding: 0 20px;
+}
+.ab-box{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-color: #f5f
+}
+
+
+#content .notice{}
+#content .notice dl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+#content .notice dl dt{}
+#content .notice dl dt a{}
+#content .notice dl dd{}
+#content .notice dl dd a{}
+#content .notice .ab-box{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#content .gallery{}
+#content .gallery ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#content .gallery ul li{}
+#content .gallery ul li a{}
+#content .gallery .ab-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .tab-box > ul > li input:checked ~.ab-box{
+    z-index: 99;
+}#content .tab-box > ul > li input:checked ~ label{
+    background-color: #f56;
+}
+
+#content .middle-banner{}
+#content .middle-banner a{
+    display: block;
+    height: 200px;
+    background: url('../img/banner.jpg') no-repeat;
+}
+#content .direct{
+    height: 200px;
+    background: url(../img/direct.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content.direct button{
+    display: block;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    border: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* /////////////////////////////////// */
+
+#footer{}
+#footer > ul{
+    display: flex;
+    height: 100px;
+}
+#footer > ul > li{}
+#footer .bottom-logo{
+    width: 20%;
+}#footer .bottom-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#footer .bottom-logo a img{
+    display: block;
+    filter: grayscale(100%);
+}
+#footer .copy{
+    width: 60%;
+
+}
+#footer .copy p{
+    line-height: 100px;
+    text-align: center;
+}
+#footer .sns-icon{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .sns-list {
+    display: flex;
+    justify-content: center;
+}
+#footer .sns-list li{}
+#footer .sns-list li a{
+    display: block;
+}
+#footer .sns-list li a img{
+    display: block;
+    border-radius: 20%;
+}
+
+/* ************************** */
+#popup-box{
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    border: solid 1px #333;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    z-index: 9999;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+    display: none;
+}
+
+#popup-box h3{
+    margin: 40px 0;
+}
+#popup-box p{}
+#close-btn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #fff;
+    border: 0%;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: #ccc 5px 5px 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.show{
+    display: block !important;
 }
