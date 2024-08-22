@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{text-decoration: none;
+color: #333;}
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+}
+#header{
+    background-color: #6cb3f5;
+    height: 100px;
+    border-bottom: solid 1px #333;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+#header h1{}
+#header h1 a{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+#header h1 a img{
+    display: block;
+}
+
+#header nav{
+    width: 50%;
+
+}
+#header .depth-01{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#header .depth-01 > li{
+    width: 25%;
+    position: relative;
+}
+#header .depth-01 > li > a{
+    display: block;
+    color: #333;
+    line-height: 50px;
+    
+}
+
+#header .depth-02{
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    
+}
+
+#header .depth-01:hover .depth-02{
+    height: 400px;
+}
+#header .depth-01 >li >a:hover,
+#header .depth-02 li a:hover{
+    background-color: rgb(73, 147, 196);
+}
+
+#header .depth-02  li{}
+#header .depth-02 li a{
+    display: block;
+    margin: 50px 0;
+    color: #333;
+    padding: 20px;
+}
+/* ....이미지 슬라이드 부분 */
+
+#mainBanner{
+    height: 300px;
+    position: relative;
+}
+#mainBanner ul{}
+#mainBanner ul li{
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#mainBanner ul li a{
+    display: block;
+    height: 100%;
+}
+#mainBanner ul li:first-child{
+    display: block;
+}
+#mainBanner ul li .s1{
+    background: url(/img/img1.jpg)no-repeat center center;
+}
+#mainBanner ul li .s2{
+    background: url(/img/img2.jpg)no-repeat center center;
+}
+
+#mainBanner ul li .s3{
+    background: url(/img/img3.jpg)no-repeat center center;
+}
+#mainBanner ul li p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 20%;
+    background-color: #6cb3f5;
+}
+
+/* -------------------------- */
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    color: #fff;
+}
+#content .con1{}
+#content .con1 .tabmenu{
+
+}
+#content .con1 .tabmenu h2{
+    display: inline-block;
+    background-color: rgb(84, 98, 102);
+    width: 150px;
+
+}
+#content .con1 .tabmenu h2 a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+#content .con1 .tabmenu .on{
+    background-color: #6cb3f5;
+}
+
+.notice-tabcon{
+    background-color: #6cb3f5;
+    padding: 10px 0;
+    
+}
+.notice-tabcon table tr th a{
+    display: block;
+    color: #fff;
+    margin: 0 20px 0 0;
+}
+table th{
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 0 10px 10px;
+    
+}
+
+.gally-tabcon{
+    display: none;
+    padding-top: 20px;
+}
+.gally-tabcon ul{
+    text-align: center;
+}
+.gally-tabcon ul li{
+    width: 120px;
+    display: inline-block;
+}
+.gally-tabcon ul li a{}
+.gally-tabcon ul li a img{}
+
+.con2{}
+.con2 a{
+    display: block;
+    height: 100%;
+    text-align: center;
+    background: url(/img/banner.jpg) no-repeat center center;
+}
+.con2 a div{}
+
+.con3{
+    padding: 20px;
+    display: none;
+}
+.con3 h2{}
+.con3 ul{
+    width: 100%;
+    display: block;
+}
+.con3 ul li{
+    display: block;
+    width: 50px;
+}
+.co3 ul li a{
+    display: block;
+
+}
+.co3 ul li a p{
+    width: 80px;
+    height: 80px;
+}
+.co3 ul li a p img{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+}
+footer a{}
+footer a img{
+    margin-right: 20px;
+    padding: 20px;
+}
+
+footer div{
+    width: 100%;
+}
+footer div .fmenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+}
+footer div p{
+    display: flex;
+    justify-content: center;
+}
+footer div .fmenu li{
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+footer div .fmenu li:last-child{
+    border: 0;
+}
+footer div .fmenu li a{}
+
+.popup{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #0003c4;
+    text-align: center;
+    z-index: 999;
+    padding: 20px;
+    display: none;
+}
+
+.popup h2{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.popup .text{
+    margin: 20px 0;
+    color: #fff;
+}
+.popup .button{
+    text-align: right;
+    color: #fff;
+}
