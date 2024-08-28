@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,dl{
+    list-style: none;
+}
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header{
+    height: 100px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+}
+#header h1{}
+#header h1 a{}
+#header h1 a img{
+    margin: 30px 30px;
+}
+
+#header nav{
+    width: 50%;
+}
+#header nav .depth-01{
+    display: flex;
+
+}
+#header nav .depth-01 > li{
+    width: 25%;
+    text-align: center;
+}
+#header nav .depth-01 > li > a{
+    display: block;
+    line-height: 30px;
+    
+}
+
+#header nav .depth-02{}
+#header nav .depth-02 li{}
+#header nav .depth-02 li a{
+    display: block;
+    line-height: 30px;
+}
+
+

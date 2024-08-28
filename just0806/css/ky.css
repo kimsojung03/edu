@@ -130,7 +130,7 @@ color: #333;}
 
 #content{
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     height: 300px;
     color: #fff;
@@ -228,6 +228,7 @@ footer a{}
 footer a img{
     margin-right: 20px;
     padding: 20px;
+    filter: grayscale(100%);
 }
 
 footer div{
@@ -271,6 +272,9 @@ footer div .fmenu li a{}
     margin-bottom: 20px;
     color: #fff;
 }
+.popup .head{
+    color: #fff;
+}
 .popup .text{
     margin: 20px 0;
     color: #fff;
@@ -278,4 +282,5 @@ footer div .fmenu li a{}
 .popup .button{
     text-align: right;
     color: #fff;
+    cursor: pointer;
 }
