@@ -1,0 +1,25 @@
+#toggle{
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ccc;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+}
+
+#toggleBtn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.on{
+    background-color: #f00 !important;
+    left: 30px !important;
+    
+}
