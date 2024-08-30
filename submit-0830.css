@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    margin: 100px auto;
+    display:flex ;
+}
+form{
+    display: flex;
+}
+p{}
+#sub_Btn{
+    font-size: 18px;
+
+}

@@ -2,7 +2,7 @@ const creatKey = document.querySelector('#creatKye');
 const creatBtn = document.querySelector('#creatBtn');
 const checkKye = document.querySelector('#checkKye');
 const checkBtn = document.querySelector('#checkBtn');
-const checkNumberDiv = document.querySelector('#checkNumberDiv')
+const checkNumberDiv = document.querySelector('#checkNumberDiv');
 
 
 let randomNumber;
