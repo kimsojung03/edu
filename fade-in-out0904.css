@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#main_b{
+    position: relative;
+}
+
+#main_b ul{
+
+}
+#main_b ul li{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#main_b ul li a{
+    display: block;
+    line-height: 300px;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+#main_b .bg_01{
+    background-color: #ff0000;
+}
+#main_b .bg_02{
+    background-color: #0f0;
+}
+#main_b .bg_03{
+    background-color: #0ff;
+}
