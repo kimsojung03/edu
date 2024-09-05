@@ -1,13 +1,30 @@
+
 $(function(){
+
     let count = 0;
+    let bool = true;
+
     $('#main_b ul li').eq(count).fadeIn(300);
 
+    let autoFade = setInterval(fadeInOut, 1500);
 
-    setInterval(function(){ //일정한 시간 간격으로 코드를 무한반복하는 함수
+    $('#stop').on('click', function(){
+        if(bool === true){
+            clearInterval(autoFade); // clearInterval(변수명);
+            bool = false;
+        }
+    });
+
+    $('#play').on('click', function(){
+        if(bool === false){
+            autoFade = setInterval(fadeInOut, 1500);
+            bool = true; // 이 값이 없으면 플레이버튼 중복이 터짐.
+        }
+    });
+
+    function fadeInOut(){
         count++;
-        count %= $('#main_b ul li').length; //li의 갯수만큼 나누겠다 3으로(0,1,2반복)
+        count %= $('#main_b ul li').length; 
         $('#main_b ul li').eq(count).fadeIn(300).siblings().fadeOut(300);
-        //eq->index번호에 해당하는 요소를 찾아라 0부터 시작
-    }, 1500);
-
+    }
 });
